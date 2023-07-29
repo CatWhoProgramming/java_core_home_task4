@@ -1,6 +1,6 @@
 package Task3;
 
-public class Player implements Playable,Recordable{
+public class Player implements Playable, Recordable {
     @Override
     public void play() {
         System.out.println("Play music");

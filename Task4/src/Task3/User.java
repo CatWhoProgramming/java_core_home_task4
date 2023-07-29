@@ -16,8 +16,8 @@ public class User {
         Scanner input = new Scanner(System.in);
         String command = input.next();
         while (!command.equals("||")) {
-             usePlayer(command,player);
-             command = input.next();
+            usePlayer(command, player);
+            command = input.next();
         }
         player.stop();
         input.close();
@@ -25,12 +25,18 @@ public class User {
 
     private static void usePlayer(String command, Player player) {
 
-            switch (command){
-                case ">": player.play(); break;
-                case "=>": player.pause();break;
-                case  "+>": player.record();break;
-                default:
-                    System.out.println("bye bye");
-            }
+        switch (command) {
+            case ">":
+                player.play();
+                break;
+            case "=>":
+                player.pause();
+                break;
+            case "+>":
+                player.record();
+                break;
+            default:
+                System.out.println("bye bye");
+        }
     }
 }
